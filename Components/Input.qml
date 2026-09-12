@@ -545,7 +545,7 @@ Column {
                 }
             ]
 
-            onClicked: config.AllowBadUsernames == "false" ? sddm.login(username.text.toLowerCase(), password.text, sessionSelect.selectedSession) : sddm.login(username.text, password.text, sessionSelect.selectedSession)
+            onClicked: config.AllowBadUsernames == "false" ? sddm.login(username.text, password.text, sessionSelect.selectedSession) : sddm.login(username.text, password.text, sessionSelect.selectedSession)
             Keys.onReturnPressed: clicked()
             Keys.onEnterPressed: clicked()
             KeyNavigation.down: sessionSelect.exposeSession
